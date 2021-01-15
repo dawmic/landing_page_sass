@@ -1,0 +1,74 @@
+/* media queries */
+
+@mixin media-xsd {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+@mixin media-sd {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        @content;
+    }
+}
+
+@mixin media-ld {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+@mixin media-xld {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+/*** end media queries mixins ***/
+
+@mixin gridContainer($col) {
+    display: grid;
+    grid-template-columns: $col;
+}
+
+@mixin flexContainer($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin buttonGroup($bgcolor) {
+    border: none;
+    background: $bgcolor;
+    border-radius: 2rem;
+    outline: none;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: 0.1s;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+@mixin hrGroup($bgcolor) {
+    width: 6rem;
+    height: .2rem;
+    border: none;
+    background: $bgcolor;
+    margin-bottom: 2rem;
+}
+
+@mixin h2Group($color) {
+    color: $color;
+    font-size: 2rem;
+    font-weight: 500;
+}

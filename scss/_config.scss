@@ -1,0 +1,37 @@
+    * {
+        box-sizing: border-box;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        color: $white-font;
+        text-align: center;
+        font-family: sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    .section-paragraph {
+        font-size: 1.1rem;
+        font-family: $lato;
+        max-width: 70%;
+        text-align: center;
+        line-height: 1.5;
+        @include media-sd {
+            max-width: 90%;
+            font-size: 1rem;
+        }
+    }
+    
+    .svg-icon {
+        height: 68px;
+    }
+    
+    .button-link {
+        font-size: 0.9rem;
+    }
+    
+    .center-container-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }

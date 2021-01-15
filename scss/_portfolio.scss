@@ -1,0 +1,12 @@
+#portfolio {
+    @include gridContainer(1fr 1fr 1fr);
+    img {
+        width: 100%;
+    }
+    @include media-sd {
+        @include gridContainer(1fr 1fr);
+    }
+    @include media-xsd {
+        @include gridContainer(1fr);
+    }
+}

@@ -1,0 +1,12 @@
+#footer {
+    background: #f8f9fa;
+    height: 120px;
+    .footer-paragraph {
+        color: $dark-font;
+        opacity: 0.8;
+        font-family: $lato;
+    }
+    @include media-sd {
+        height: 80px;
+    }
+}

@@ -1,0 +1,23 @@
+                    #about {
+                        height: 500px;
+                        width: 100%;
+                        background: $custom-orange;
+                        h2 {
+                            margin-bottom: 2rem;
+                            @include h2Group($white-font);
+                        }
+                        hr {
+                            @include hrGroup($white-font);
+                        }
+                        p {
+                            margin-bottom: 2rem;
+                        }
+                        button {
+                            height: 3.8rem;
+                            width: 11rem;
+                            @include buttonGroup($btn-bg);
+                            a {
+                                color: $dark-font;
+                            }
+                        }
+                    }

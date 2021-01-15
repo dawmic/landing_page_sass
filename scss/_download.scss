@@ -1,0 +1,16 @@
+#download {
+    background: #343A40;
+    height: 370px;
+    h2 {
+        @include h2Group($white-font);
+    }
+    button {
+        height: 3.8rem;
+        width: 12rem;
+        @include buttonGroup($btn-bg);
+        margin-top: 2rem;
+        a {
+            color: $dark-font;
+        }
+    }
+}
